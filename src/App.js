@@ -1,7 +1,11 @@
 import React from 'react';
-import { Story } from './components/Story/index'
+import { StoryRow } from './components/StoryRow/index'
+import { GlobalStyles } from './globalStyles';
 
 export const App = () => (
-    <Story/>
+    <div>
+        <GlobalStyles/>
+        <StoryRow/>
+    </div>
     
 );
