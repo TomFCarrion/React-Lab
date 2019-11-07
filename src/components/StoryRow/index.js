@@ -1,12 +1,13 @@
 import React from 'react';
 import { Story } from '../Story/index';
 import {List, Item } from './styles'
+import { mockUsers} from '../../../api/db.json'
 
 export const StoryRow = () => {
     return (
         <List>
             {
-                [1,2,3,4,5].map(story => <Item><Story/></Item>)
+             mockUsers.map(story => <Item key={story.id}><Story {...story}/></Item>)
             }
         </List>
     )
