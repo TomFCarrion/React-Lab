@@ -3,7 +3,6 @@ import { fadeIn } from '../../styles/animation'
 
 
 export const ImgWrapper = styled.div`
-  border-radius: 10px;
   display: block;
   height: 0;
   overflow: hidden;
@@ -27,6 +26,8 @@ export const Button = styled.button`
   align-items: center;
   padding-top: 8px;
   & svg {
-    margin-right: 4px;
+    height: 1.2rem;
+    color: rgb(224, 36, 94);
+    margin: 4px;
   }
 `
