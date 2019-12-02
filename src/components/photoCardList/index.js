@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from 'react'
-import { Story } from '../Story/index';
-import {List, Item } from './styles'
-import { mockUsers} from '../../../api/db.json'
+import { PhotoCard } from '../photoCard/index';
 
-export const StoryRow = () => {
+export const PhotoCardList = () => {
 
     const [hasError, setErrors] = useState(false);
     const [photos, setPhotos] = useState([]);
 
-    const UsersFetch = () => {
+    const photoCardFetch = () => {
         async function fetchData() {
-          const res = await fetch('https://api.pexels.com/v1/search?query=people+query&per_page=15&page=1', { 
+          const res = await fetch('https://api.pexels.com/v1/search?query=friends+query&per_page=15&page=1', { 
             method: 'GET', 
             headers: new Headers({
               'Authorization': '563492ad6f91700001000001b68f03e4b49c4fa19d3267e8a5dc7c15'
@@ -31,13 +29,11 @@ export const StoryRow = () => {
         return photos;
     }
 
-    UsersFetch();
+    photoCardFetch();
 
     return (
-        <List>
-            {
-             photos.map(story => <Item key={story.id}><Story cover= { ((story||{}).src || {}).small} userName={(story||{}).photographer}/></Item>)
-            }
-        </List>
+        <ul>
+            {photos.map(photo => <PhotoCard src={((photo||{}).src || {}).medium} key={photo.id}/> )}
+        </ul>
     )
-} 
+}

@@ -5,7 +5,7 @@ export const Anchor = styled.a`
     flex-direction: column;
     text-align: center;
     text-decoration: none;
-    width: 5rem;
+    width: 4rem;
 `
 
 export const Image = styled.img`
@@ -15,6 +15,6 @@ export const Image = styled.img`
     height: auto;
     overflow: hidden;
     object-fit: cover;
-    height: 5rem;
-    width: 5rem;
+    height: 4rem;
+    width: 4rem;
 `
