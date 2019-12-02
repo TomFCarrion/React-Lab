@@ -2,6 +2,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports= {
+  entry: [require.resolve('regenerator-runtime/runtime.js'), './src/index'],
   output: {
     filename: 'app.bundle.js'
   },
@@ -18,7 +19,7 @@ module.exports= {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-react']
+            presets: ['@babel/preset-env', '@babel/preset-react'],
           }
         }
       }
