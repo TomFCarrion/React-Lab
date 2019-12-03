@@ -2,7 +2,6 @@
 [![Javascript](http://img.shields.io/badge/Javascript-yellow.svg)]() [![Reacrt.js](http://img.shields.io/badge/React.js-blue.svg)]() [![styledComponents](http://img.shields.io/badge/StyledComponents-red.svg)]() [![hooks](http://img.shields.io/badge/hooks-purple.svg)]()
 
 This is a personal project to keep myself updated and never stop practicing react.js
-The idea is 
 
 ## Installation
 
