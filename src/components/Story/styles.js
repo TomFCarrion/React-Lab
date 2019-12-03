@@ -6,6 +6,7 @@ export const Anchor = styled.a`
     text-align: center;
     text-decoration: none;
     width: 4rem;
+    margin-bottom: 1rem;
 `
 
 export const Image = styled.img`
@@ -18,3 +19,11 @@ export const Image = styled.img`
     height: 4rem;
     width: 4rem;
 `
+
+export const UserName = styled.span`
+  color: grey;
+  font-size:10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+`;
