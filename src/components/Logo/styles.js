@@ -1,8 +1,10 @@
 import styled from 'styled-components'
 
 export const Svg = styled.svg`
-  width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 66%;
   height: 5%;
-  margin-left: 20%;
-  margin-top: 20px;
+  margin: auto;
 `
