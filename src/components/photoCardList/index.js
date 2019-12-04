@@ -6,7 +6,6 @@ export const PhotoCardList = () => {
     const [hasError, setErrors] = useState(false);
     const [photos, setPhotos] = useState([]);
 
-    const photoCardFetch = () => {
         async function fetchData() {
           const res = await fetch('https://api.pexels.com/v1/search?query=friends+query&per_page=15&page=1', { 
             method: 'GET', 
@@ -19,17 +18,10 @@ export const PhotoCardList = () => {
             .catch(err => setErrors(err))
         }
 
+
         useEffect(() => {
             fetchData();
         }, [])
-
-        console.log(photos);
-
-    
-        return photos;
-    }
-
-    photoCardFetch();
 
     return (
         <ul>
