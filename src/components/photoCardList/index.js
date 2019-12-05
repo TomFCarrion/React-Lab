@@ -7,7 +7,7 @@ export const PhotoCardList = () => {
     const [photos, setPhotos] = useState([]);
 
         async function fetchData() {
-          const res = await fetch('https://api.pexels.com/v1/search?query=friends+query&per_page=15&page=1', { 
+          const res = await fetch('https://api.pexels.com/v1/search?query=friends+query&per_page=35&page=1', { 
             method: 'GET', 
             headers: new Headers({
               'Authorization': '563492ad6f91700001000001b68f03e4b49c4fa19d3267e8a5dc7c15'
